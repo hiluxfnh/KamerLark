@@ -1,0 +1,150 @@
+body{
+  background-color: #f4fbff;
+}
+
+#carouselExampleIndicators{
+  margin: 1% 5% 0 5%;
+}
+
+.carousel-inner{
+  border-radius: 10px;
+}
+.card-price {
+  float: right;
+  margin-right: 10px;
+}
+
+.card-text{
+  margin: 0 10px;
+  display: flex;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333; /* dark background color */
+  color: #fff; /* white text color */
+  padding: 30px 0; /* padding for top and bottom */
+}
+
+footer h3 {
+  margin-bottom: 20px; /* space below headings */
+}
+
+footer ul {
+  list-style: none; /* remove bullet points */
+  margin: 0; /* remove margins */
+  padding: 0; /* remove padding */
+}
+
+footer li {
+  margin-bottom: 10px; /* space below list items */
+}
+
+footer .social-icons i {
+  font-size: 20px; /* increase icon size */
+  margin-right: 10px; /* space between icons */
+}
+
+footer .social-icons i:hover {
+  color: #1abc9c; /* change hover color */
+}
+
+footer form {
+  margin-top: 20px; /* space above form */
+}
+
+footer form input {
+  padding: 10px; /* add padding to input */
+  border: none; /* remove border */
+  border-radius: 5px; /* add border radius */
+  width: 70%; /* set width */
+}
+
+footer form select {
+  padding: 10px; /* add padding to select */
+  border: none; /* remove border */
+  border-radius: 5px; /* add border radius */
+}
+
+footer form i {
+  position: absolute; /* position icon */
+  right: 20px; /* space from right */
+  top: 15px; /* space from top */
+  color: #999; /* icon color */
+}
+
+footer form i:hover {
+  color: #cae5e0; /* change hover color */
+}
+
+footer .text-center {
+  margin-top: 20px; /* space above copyright information */
+}
+
+footer .list-inline {
+  margin-top: 10px; /* space above list */
+}
+
+footer .list-inline-item {
+  margin-right: 10px; /* space between list items */
+}
+
+.navbar-nav li{
+  padding-right: 30px;
+  font-weight: bolder;
+  margin-left: 25px;
+}
+
+.navbar-nav li a:hover{
+  text-decoration: underline;
+}
+
+nav{
+  background-color: #e6fff9 !important;
+}
+
+.card-row{
+  margin-top: 20px;
+}
+
+#show-more-btn{
+  margin-top: 20px;
+}
+
+.form-row{
+  margin: 0px 20px;
+  }
+  
+  form{
+  width: 75%;
+  margin: 0 auto;
+  }
+  
+  .form-control{
+  margin: 10px 0px;
+  }
+  
+  button{
+  margin-top: 20px;
+  }
+  
+  select{
+  margin: 10px 0px;
+  }
+
+
+  
