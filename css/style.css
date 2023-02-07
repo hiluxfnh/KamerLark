@@ -101,6 +101,7 @@ footer .list-inline {
 
 footer .list-inline-item {
   margin-right: 10px; /* space between list items */
+  bottom: 0;
 }
 
 .navbar-nav li{
