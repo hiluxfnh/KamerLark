@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Listings</a>
+                    <a class="nav-link" href="#listings">Listings</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Add Listing</a>
@@ -120,6 +120,31 @@
     <div class="form-row mb-4">
         <div class="col">
             <select class="browser-default custom-select" id="type">
+                <option value="" disabled selected>University Name</option>
+                <option value="Apartment">University of Dschang</option>
+                <option value="Apartment">University of Yaounde</option>
+                <option value="Apartment">University of Douala</option>
+                <option value="Apartment">University of Bamenda</option>
+                <option value="Apartment">University of Bertoua</option>
+                <option value="Apartment">University of Buea</option>
+                <option value="Apartment">University of Sao</option>
+                <option value="Apartment">University of Ngoaekele</option>
+                <option value="Apartment">University of Garoua</option>
+                <option value="Apartment">University of Maroua</option>
+                <option value="Apartment">University of Ngoundere</option>
+            </select>
+        </div>
+        <div class="col">
+            <select class="browser-default custom-select" id="furnished">
+                <option value="" disabled selected>Payment option</option>
+                <option value="True">Annually</option>
+                <option value="False">Monthly</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row mb-4">
+        <div class="col">
+            <select class="browser-default custom-select" id="type">
                 <option value="" disabled selected>Type</option>
                 <option value="Apartment">Apartment</option>
                 <option value="House">House</option>
@@ -134,10 +159,20 @@
             </select>
         </div>
     </div>
-    <button class="btn btn-info btn-block my-4" type="submit">Search</button>
+
+    <div class="form-row mb-5">
+        <div class="col">
+            <button class="btn btn-info btn-block my-4" type="submit">Search</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-info btn-block my-4" type="reset">Reset</button>
+        </div>
+
+    </div>
+    
 </form>
 
-<div class="container">
+<div id="listings" class="container">
     <div class="row card-row">
         <div class="col-lg-4 col-md-6">
             <div class="card h-100">
