@@ -130,9 +130,11 @@
                 </div> 
                 <br>
                 <div class="text-center">
-                     <a href="#" class="btn btn-primary" style="margin: 3px; padding: 6px 42px;">Join Student Community</a>
-                </div>
+                    <a href="roommate.html" class="btn btn-primary" style="margin: 3px; padding: 6px 42px;">Join Student Community</a>
+               </div>
                <br>
+
+               <!--Owner Contact-->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
@@ -152,14 +154,103 @@
                                     
                                 </div>
                                 
-                                <a href="#" class="btn btn-primary" style="margin: 3px;">Book an appointment</a>
                                 
-                                <a href="#" class="btn btn-primary" style="margin: 3px;">Chat with owner</a>
-                                <a href="book.html" class="btn btn-primary" style="margin: 3px;">Book Now</a>
+                                <a class="btn btn-primary" style="margin: 3px; color: white;"  id="openModal">Book an appointment</a>
+                                
+                                <a href="chat.html" class="btn btn-primary" style="margin: 3px;">Chat with owner</a>
+                                <a id="bookNowBtn" class="btn btn-primary" style="margin: 3px; color: white;">Book Now</a>
                                 <a href="contract.html" class="btn btn-secondary" style="margin: 3px;">View Contract Terms</a>
                             </div>
-                        </div><br>
+                        </div>
+                        
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form class="text-center border border-light p-5">
+                                    <p class="h4 mb-4">Easily schedule a physical or online visit with the owner</p>
+                                
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <select class="browser-default custom-select" id="type">
+                                                <option value="" disabled selected>Means</option>
+                                                <option value="Apartment">Video Conferencing</option>
+                                                <option value="Apartment">Physically</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <input type="date" id="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row mb-5">
+                                        <div class="col">
+                                            <button class="btn btn-info btn-block my-4" type="submit">Schedule Appointment</button>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <br>
+                        <!-- Book now -->
+                        <div id="bookNowModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <form class="text-center border border-light p-5">
+                                <p class="h4 mb-4">Book your Accommodation now</p>
+                          
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                      <input type="text" id="name" class="form-control" placeholder="Your Name">
+                                    </div>
+                                    <div class="col">
+                                      <input type="email" id="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                
+                             
+                                
+                                <div class="form-row mb-2">
+                                  <div class="col">
+                                    <input type="tel" id="phone" class="form-control" placeholder="Phone">
+                                  </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                    <label>You have to pay a total amount of : </label>
+                                    </div>
+                                    <div class="col">
+                                    <label>100 000FCFA</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                      <select name="" id="">
+                                        <option value="" disabled>Select a payment method</option>
+                                        <option value="">Orange Money</option>
+                                        <option value="">MTN Mobile Money</option>
+                                        <option value="">Paypal</option>
+                                      </select>
+                                    </div>
+                                    <div class="col"> 
+                                      <label><input type="checkbox" >I agree the terms of the<a href="contract.html"> leasing contract</a> and <a href="terms.html">policies of HOMING2.0</a> </label>
+                                    </div>
+                                </div>
+                                <div class="form-row mb-5">
+                                  <div class="col">
+                                    <button type="button" class="btn btn-primary" id="paymentModalButton">Open Payment Modal</button>
+                                    <button id="paymentModal" class="btn btn-info btn-block my-4" type="submit">Make Payment</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
                     </div>
+                
+                  
+                    <!--Map location  -->
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
@@ -219,5 +310,61 @@
             </div>
         </footer>
     </body>
+    <script>
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    </script>
+
+<script>
+    // Get the modal
+    var bookNowModal = document.getElementById("bookNowModal");
+  
+    // Get the button that opens the modal
+    var bookNowBtn = document.getElementById("bookNowBtn");
+  
+    // Get the <span> element that closes the modal
+    var bookNowSpan = document.getElementsByClassName("close")[1];
+  
+    // When the user clicks the button, open the modal 
+    bookNowBtn.onclick = function() {
+      bookNowModal.style.display = "block";
+    }
+  
+    // When the user clicks on <span> (x), close the modal
+    bookNowSpan.onclick = function() {
+      bookNowModal.style.display = "none";
+    }
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == bookNowModal) {
+        bookNowModal.style.display = "none";
+      }
+    }
+  </script>
 </html>
               

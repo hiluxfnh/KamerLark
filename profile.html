@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <!-- Bootstrap CSS & JS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ 
+ <!-- Custom CSS -->
+ <link rel="stylesheet" href="css/style.css">
+ 
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <style>
+      h2 {
+        font-weight: bold;
+        color: #333;
+        margin-top: 30px;
+      }
+      .card {
+        box-shadow: 0px 0px 10px #ddd;
+        margin-top: 30px;
+      }
+      .card-header {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      .card-body {
+        padding: 30px;
+      }
+      .user-details {
+        margin-top: 30px;
+      }
+      .user-details h3 {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      .user-details p {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo1.png" style="margin-left: 60px;" width="100" height="60" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#listings">Listings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listings.html">Add Listing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+      <h2>User Profile</h2>
+      <div class="card">
+        <div class="card-header">
+          User Information
+        </div>
+        <div class="card-body">
+          <div class="user-details">
+            <img src="img/profile.png" width="50px" alt="" style="float: left; top: 0;"> <br><br><br>
+            <h3>Name:</h3>
+            <p>John Doe</p>
+            <h3>Email:</h3>
+            <p>johndoe@example.com</p>
+            <h3>Phone Number:</h3>
+            <p>(123) 456-7890</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Plan Information
+        </div>
+        <div class="card-body">
+          <div class="user-details">
+            <h3>Plan:</h3>
+            <p>Premium</p>
+            <h3>Expiry Date:</h3>
+            <p>01/01/2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Accommodation Information
+        </div>
+        <div class="card-body">
+          <div class="user-details">
+            <h3>Accommodation Booked:</h3>
+            <p>Cite des Palmier, Univerity of Yaounde</p>
+            <h3>Booking Date:</h3>
+            <p>01/01/2023</p>
+          </div>
+        </div>
+      </div>
+      <form action="login.html">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold;" class="text-center">Log Out</button>
+      </form>
+      
+
+    </div>
+  </body>
+</html>

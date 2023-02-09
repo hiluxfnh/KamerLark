@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        img{
+            width: 50px !important;
+            margin: 10px 0 0 20px;
+            float: left;
+        }
+        .btn-primary {
+            margin: 10px 0 0 20px;
+        }
+        .card{
+            margin: 10px 0 0 0;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo1.png" style="margin-left: 70px;" width="100px" height="80px" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#listings">Listings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add Listing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form class="text-center border border-light p-5">
+        <p class="h4 mb-4">Chat with students in your location and find propective Roommates!</p>
+        <div class="form-row mb-4">
+            <div class="col">
+                <input type="text" id="location" class="form-control" placeholder="Students Location">
+            </div>
+            <div class="col">
+                <select class="browser-default custom-select" id="type">
+                    <option value="" disabled selected>Price Range</option>
+                    <option value="price">100 000 - 150 000FCFA</option>
+                    <option value="price">150 001 - 200 000FCFA</option>
+                    <option value="price">200 001 - 250 000FCFA</option>
+                    <option value="price">250 001 - 300 000FCFA</option>
+                    <option value="price">300 000FCFA and Above</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row mb-4">
+            <div class="col">
+                <select class="browser-default custom-select" id="type">
+                    <option value="" disabled selected>University Name</option>
+                    <option value="Apartment">University of Dschang</option>
+                    <option value="Apartment">University of Yaounde</option>
+                    <option value="Apartment">University of Douala</option>
+                    <option value="Apartment">University of Bamenda</option>
+                    <option value="Apartment">University of Bertoua</option>
+                    <option value="Apartment">University of Buea</option>
+                    <option value="Apartment">University of Sao</option>
+                    <option value="Apartment">University of Ngoaekele</option>
+                    <option value="Apartment">University of Garoua</option>
+                    <option value="Apartment">University of Maroua</option>
+                    <option value="Apartment">University of Ngoundere</option>
+                </select>
+            </div>
+            <div class="col">
+                <select class="browser-default custom-select" id="type">
+                    <option value="" disabled selected>Type</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="House">House</option>
+                    <option value="Room">Room</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="form-row mb-4">
+            <div class="col">
+                <button class="btn btn-info btn-block my-4" type="submit">Search</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-info btn-block my-4" type="reset">Reset</button>
+            </div>
+    
+        </div>
+        
+    </form>
+    
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of Yaounde</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">ken Doe</h5>
+                  <p class="card-text">University of Bertoua</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">Tom Broar</h5>
+                  <p class="card-text">University of Douala</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">Nelson Peter</h5>
+                  <p class="card-text">University of Buea</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">Ken Brad</h5>
+                  <p class="card-text">University of Buea</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">Steph Dome</h5>
+                  <p class="card-text">University of Yaounde</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+                <img src="img/profile.png" class="card-img-top" alt="student profile">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">University of XYZ</p>
+                  <div class="row">
+                    <input type="submit" value="Connect" href="#" class="btn btn-primary">
+                    <input type="submit" value="Chat" href="#" class="btn btn-primary">
+                    <input type="submit" value="Send Roommate Request" href="#" class="btn btn-primary">
+                  </div>
+                </div>
+              </div>  
+          </div>
+          
+          <!-- Add more col-6 for additional student profiles -->
+        </div>
+      </div>
+      
+    </div>
+</div> 
+</body>
+</html>

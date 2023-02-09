@@ -36,13 +36,16 @@
                     <a class="nav-link" href="#listings">Listings</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Add Listing</a>
+                    <a class="nav-link" href="listings.html">Add Listing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
                 </li>
             </ul>
         </div>
@@ -114,7 +117,14 @@
             <input type="text" id="location" class="form-control" placeholder="Location">
         </div>
         <div class="col">
-            <input type="number" id="price" class="form-control" placeholder="Price">
+            <select class="browser-default custom-select" id="type">
+                <option value="" disabled selected>Price Range</option>
+                <option value="price">100 000 - 150 000FCFA</option>
+                <option value="price">150 001 - 200 000FCFA</option>
+                <option value="price">200 001 - 250 000FCFA</option>
+                <option value="price">250 001 - 300 000FCFA</option>
+                <option value="price">300 000FCFA and Above</option>
+            </select>
         </div>
     </div>
     <div class="form-row mb-4">
@@ -171,6 +181,10 @@
     </div>
     
 </form>
+
+<div class="text-center">
+    <a href="roommate.html" class="btn btn-primary" style="margin: 3px; padding: 6px 42px;">Join Student Community</a>
+</div>
 
 <div id="listings" class="container">
     <div class="row card-row">

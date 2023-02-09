@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Appointment</title>
+    <meta charset="UTF-8">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap CSS & JS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<style>
+          #btn {
+            margin-left: 83%;
+            margin-bottom: 20px;
+        }
+        #btn a{
+            color: white;
+        }
+</style>
+</head>
+  <body>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="chat-screen">
+              <ul class="list-unstyled chat">
+                <li class="clearfix">
+                  <div class="float-right">
+                    <img src="img/profile.png" width="50px"  alt="Student Icon" class="img-fluid student-icon">
+                  </div>
+                  <div class="message float-right">
+                    <p>Hello!</p>
+                  </div>
+                </li><br>
+                <li class="clearfix">
+                  <div class="float-left">
+                    <img src="img/profile.png" width="50px"  alt="Owner Icon" class="img-fluid owner-icon">
+                  </div>
+                  <div class="message float-left">
+                    <p>Hello, How can I help you?</p>
+                  </div>
+                </li><br>
+                <li class="clearfix">
+                  <div class="float-right">
+                    <img src="img/profile.png" width="50px"  alt="Student Icon" class="img-fluid student-icon">
+                  </div>
+                  <div class="message float-right">
+                    <p>Hi, I have a question about the price of the room.</p>
+                  </div>
+                </li>
+              </ul>
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" id="message" rows="2" style="border-radius: 10px;"></textarea>
+                </div>
+                <button type="submit" id="btn" class="btn btn-primary">Send</button>
+              </form>
+              
+              <a class="btn btn-primary" style="margin: 3px; color: white;"  id="openModal">Book an appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="text-center border border-light p-5">
+                <p class="h4 mb-4">Easily schedule a physical or online visit with the owner</p>
+            
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <select class="browser-default custom-select" id="type">
+                            <option value="" disabled selected>Means</option>
+                            <option value="Apartment">Video Conferencing</option>
+                            <option value="Apartment">Physically</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" id="name" class="form-control" placeholder="Date : DD/MM/YYYY">
+                    </div>
+                </div>
+                
+                <div class="form-row mb-5">
+                    <div class="col">
+                        <button class="btn btn-info btn-block my-4" type="submit">Schedule Appointment</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+      <button id="btn" class="btn btn-primary"><a href="more.html">Back</a> </button>
+
+      <script>
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    </script>
+  </body>
+</html>
